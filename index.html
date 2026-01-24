@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponge Tool Attack</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      text-align: center;
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.5;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-top: 40px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #3d85c6;
+      font-weight: bold;
+    }
+    .authors {
+      margin: 10px 0 20px;
+      font-size: 16px;
+    }
+    .affiliations {
+      font-size: 14px;
+      color: #444;
+    }
+    .affiliations a {
+      color: #888;
+      text-decoration: none;
+    }
+    .row-sidebyside {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .row-sidebyside img:first-child {
+      width: 56%;
+    }
+    .row-sidebyside img:last-child {
+      width: 40%;
+    }
+    .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+      max-width: 740px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .single-img {
+      width: 740px;
+      max-width: 100%;
+      margin: 30px auto;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<img src="Project_Logo.png" alt="Project Logo" style="max-width: 100%; margin-bottom: 20px;">
+
+  <h1>Sponge Tool Attack: Stealthy Denial-of-Efficiency against Tool-Augmented Agentic Reasoning</h1>
+
+  <div class="authors">
+    Qi Li, Xinchao Wang<sup>*</sup>
+  </div>
+  <div class="affiliations">
+    National University of Singapore<br>
+    <a href="mailto:xinchao@nus.edu.sg">xinchao@nus.edu.sg</a>
+  </div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/your_arxiv_id" target="_blank">[arXiv]</a>
+    <a href="https://github.com/yourrepo" target="_blank">[Code (coming soon)]</a>
+    <!-- <a href="https://huggingface.co/datasets/yourdataset" target="_blank">[Dataset]</a> -->
+  </div>
+
+  <h2>Abstract</h2>
+  <p>
+   In this work, we identify a tool-specific attack surface and propose <strong>Sponge Tool Attack (STA)</strong>, which disrupts agentic reasoning solely by rewriting the input prompt under a strict query-only access assumption. Without any modification on the underlying model or the external tools, STA converts originally concise and efficient reasoning trajectories into unnecessarily verbose and convoluted ones before arriving at the final answer <strong>(Denial-of-Efficiency (DoE))</strong>. This results in substantial computational overhead while remaining stealthy by preserving the original task semantics and user intent. 
+  </p>
+
+  <h2>Illustration</h2>
+  <div class="row-sidebyside">
+    <img src="step12_v2.png" alt="Step 12">
+    <img src="step3.png" alt="Step 3">
+  </div>
+  <div class="caption">
+    <strong>Left:</strong> The offline policy bank construction process. <strong>Right:</strong> The sponging process utilizing the policy bank.
+  </div>
+
+  <div class="single-img">
+    <img src="dashboard_1.png" alt="Dashboard" style="width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+  </div>
+
+  <h2>BibTeX</h2>
+  <pre>
+@article{spongetool2024,
+  title={Sponge Tool Attack: Stealthy Denial-of-Efficiency against Tool-Augmented Agentic Reasoning},
+  author={Qi Li and Xinchao Wang},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2024}
+}
+  </pre>
+
+</body>
+</html>
