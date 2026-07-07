@@ -121,8 +121,10 @@
   </div>
   
   <h2>BibTeX</h2>
-  <pre>
 
+<div class="bibtex-box">
+  <button class="copy-btn" onclick="copyBibTeX()">Copy</button>
+  <pre id="bibtex">
 @article{li2026sponge,
   title={Sponge Tool Attack: Stealthy Denial-of-Efficiency against Tool-Augmented Agentic Reasoning},
   author={Li, Qi and Wang, Xinchao},
@@ -130,8 +132,22 @@
   year={2026},
   organization={PMLR}
 }
-   
   </pre>
+</div>
+
+<script>
+  function copyBibTeX() {
+    const bibtex = document.getElementById("bibtex").innerText.trim();
+    navigator.clipboard.writeText(bibtex).then(() => {
+      const btn = document.querySelector(".copy-btn");
+      const originalText = btn.innerText;
+      btn.innerText = "Copied!";
+      setTimeout(() => {
+        btn.innerText = originalText;
+      }, 1500);
+    });
+  }
+</script>
 
 </body>
 </html>
